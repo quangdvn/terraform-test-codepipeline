@@ -1,3 +1,6 @@
+provider "aws" {
+  region = "ap-northeast-1" # AWS credentials will be supplied using CodeBuild’s service role
+}
 data "aws_ami" "ubuntu" {
   most_recent = true
   filter {
